@@ -1,0 +1,35 @@
+AD enumeration - commands:
+
+enumerating AV software:
+
+wmic /namespace:\\root\securitycenter2 path antivirusproduct
+
+powershell : Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
+
+Note: SecurityCenter2 may not be on the endpoint.
+
+PowerShell: (Service state of Windows Defender) Get-Service WinDefend
+
+Current status of Windows Defender: Get-MpComputerStatus
+
+(note: use select to search for items related to that example:)
+
+Get-MpComputerStatus | select RealTimeProtectionEnabled
+
+PowerShell : Get-NetFirewallProfile (will show the Firewall Profile)
+
+PowerShell : Set-NetFirewallProfile (sets the firewall profile)
+
+example:
+
+Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False PS C:\Windows\system32> Get-NetFirewallProfile | Format-Table Name, Enabled
+
+(note: those commands have different attributes to select, check the documentation)
+
+PowerShell: Test-NetConnection
+
+PowerShell: TcpClient
+
+Used to test connections and if Firewall profiles are in place
+
+PowerShell: Get-MpThreat (lists threat details that have been detected using MS Defender)
