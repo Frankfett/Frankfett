@@ -1,6 +1,5 @@
-- 👋 Hi, I’m @Frankfett
-- 👀 I’m interested in learning as much as I can about cybersecurity.
-- 🌱 I’m currently learning all manners of offensive and defensive capabilities within the cybersecurity realm.
+- 👋 Hi, I’m Frank and @ZeroFett1 at Hack the Box
+- 👀 I am a Cybersecurity Instructor with a passion for AI Red Team
 - 📫 How to reach me @ https://www.linkedin.com/in/franklin-s/
 
 <!---
